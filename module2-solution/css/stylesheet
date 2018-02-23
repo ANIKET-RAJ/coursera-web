@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	display: block;
+	font-family: "Times New Roman", Times, serif;
 }
 body{
 	margin: 0;
@@ -14,9 +14,10 @@ h1{
 #box {
 	background-color: gray;
 	border: 1px solid black;
-	margin: 20px;
+	margin: 5px;
 	float: left;
 	}
+
 #head1{
 	background-color: pink;
 	float: right;
@@ -24,6 +25,7 @@ h1{
 	border: 1px solid black;
 	width: 30%;
 }
+
 #head2{
 	background-color: #ff704d;
 	float: right;
@@ -31,6 +33,7 @@ h1{
 	border: 1px solid black;
 	width: 30%;
 }
+
 #head3{
 	background-color: #e6ac00 ;
 	float: right;
@@ -38,25 +41,31 @@ h1{
 	border: 1px solid black;
 	width: 30%;
 }
+
 section{
 clear: right;
 padding: 30px;
 }
-@media(min-width:992px )
+
+/*********Large-devices***************/
+
+@media(min-width:991px )
 {
 #box{
-	width:30%;
+	width:32%;
 }
+
 }
+
+
+/***********medium-devices************/
+
 @media(max-width: 991px)and (min-width:768px ) 
 {
 	#box.full{
-	width: 95%;
+	width: 91%;
 }
 #box{
 	width: 45%
 }
-
-
-	
 }
